@@ -224,7 +224,7 @@ func main() {
 	cfg := Config{}
 	flag.StringVar(&host, "host", "localhost", "Host of database")
 	flag.StringVar(&dbuser, "user", dbuser, "User")
-	flag.StringVar(&password, "password", "", "Password")
+	flag.StringVar(&password, "password", os.Getenv("MYSQL_PWD"), "Password")
 	flag.IntVar(&port, "port", 3306, "Port")
 
 	flag.StringVar(&dumpfile, "dump", "", "Write raw queries to this file")

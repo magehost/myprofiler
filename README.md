@@ -22,7 +22,7 @@ Usage of ./myprofiler:
   -dump="": Write raw queries to this file
   -host="localhost": Host of database
   -interval=1: (float) Sampling interval
-  -password="": Password
+  -password="": Password - Can also be supplied using environment variable `MYSQL_PWD`
   -port=3306: Port
   -last=0: (int) Last N samples are summarized. 0 means summarize all samples
   -top=10: (int) Show N most common queries
